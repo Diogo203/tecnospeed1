@@ -1,0 +1,8 @@
+{"level":"info","message":"Mensagem de INFO - O sistema está funcionando corretamente.","timestamp":"2024-11-24T20:18:02.348Z"}
+{"level":"warn","message":"Mensagem de WARN - Algo pode estar errado.","timestamp":"2024-11-24T20:18:02.350Z"}
+{"level":"error","message":"Mensagem de ERROR - Um erro ocorreu no sistema.","timestamp":"2024-11-24T20:18:02.351Z"}
+{"level":"info","message":"Mensagem de INFO - O sistema está funcionando corretamente.","timestamp":"2024-11-24T20:22:44.318Z"}
+{"level":"warn","message":"Mensagem de WARN - Algo pode estar errado.","timestamp":"2024-11-24T20:22:44.320Z"}
+{"level":"error","message":"Mensagem de ERROR - Um erro ocorreu no sistema.","timestamp":"2024-11-24T20:22:44.321Z"}
+{"level":"info","message":"Requisição recebida para verificar status da API.","timestamp":"2024-11-25T21:57:48.975Z"}
+{"level":"error","message":"Requisição inválida. Dados faltando no corpo.","timestamp":"2024-11-25T21:57:48.980Z"}
