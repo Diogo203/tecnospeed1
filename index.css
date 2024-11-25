@@ -1,0 +1,234 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0F1827; /* Cor externa da caixa */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #252d3a; /* Cor interna da caixa */
+    border-radius: 10px;
+    border: 1px solid #2791D0; /* Cor da borda da caixa */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 18%;
+}
+
+.monitor-section {
+    padding: 20px;
+}
+
+.bank-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bank-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.time-selection .time-btn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #4e5979;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #00aaff;
+}
+
+.chart {
+    background-color: #252d3a; /* Cor interna do gráfico */
+    border: 1px solid #4e5979;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.status-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.status-box {
+    background-color: #3a3f52;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.status-box h2 {
+    font-size: 1.2em;
+}
+
+.status-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff4d4d;
+}
+
+.partnership {
+    background-color: #00aaff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.error-history {
+    padding: 20px;
+}
+
+.error-history h2 {
+    color: #ff4d4d;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.error-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.error-history td {
+    border: 1px solid #4e5979;
+    padding: 10px;
+    color: #ff4d4d;
+    text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .status-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .status-box {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .partnership {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .status-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bank-selection .btn,
+    .time-selection .time-btn {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    .chart {
+        height: 150px;
+    }
+
+    .error-history table,
+    .error-history td {
+        font-size: 0.8em;
+    }
+
+    .header h1 {
+        font-size: 1.2em;
+    }
+
+    .partnership {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+
+/* Legenda de Status */
+.status-legend {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.status-item {
+    padding: 5px 10px;
+    margin: 3px 0;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.stable {
+    background-color: #28a745; /* Verde para Estável */
+    color: white;
+}
+
+.slow {
+    background-color: #ffc107; /* Amarelo para Lento */
+    color: white;
+}
+
+.error {
+    background-color: #dc3545; /* Vermelho para Erro */
+    color: white;
+}
+
+.bank-logo {
+    width: 50px;
+    margin-right: 10px;
+    border: 2px solid #4e5979; /* Adicionando a borda */
+    border-radius: 5px; /* Deixa a borda arredondada */
+    background-color: #252d3a; /* Cor de fundo para dar contraste com a borda */
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitorador Bancário</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header class="header">
+      <img src="images/tecnospeed-logo.png" alt="Tecnofodase Logo" class="logo">
+      <h1>MONITORADOR BANCÁRIO</h1>
+    </header>
+
+    <!-- Seção de Gráfico e Seleção -->
+    <section class="monitor-section">
+      <div class="bank-selection">
+        <!-- Logos dos Bancos -->
+        <img src="images/banco-do-brasil-logo.png" alt="Banco do Brasil" class="bank-logo">
+        <img src="images/itau-logo.png" alt="Itaú" class="bank-logo">
+        <img src="images/sicoob.png" alt="Sicoob" class="bank-logo">
+        <img src="images/sicredi-logo.png" alt="Sicredi" class="bank-logo">
+        <img src="images/caixa-logo.png" alt="Caixa" class="bank-logo">
+        <img src="images/santander-logo.png" alt="Santander" class="bank-logo">
+        <img src="images/banrisul-logo.png" alt="Banrisul" class="bank-logo">
+        <img src="images/inter-logo.png" alt="Inter" class="bank-logo">
+      </div>
+      
+      <div class="time-selection">
+        <button class="time-btn selected">24h</button>
+        <button class="time-btn">7 dias</button>
+        <button class="time-btn">30 dias</button>
+      </div>
+      <div class="chart">
+        <!-- Aqui você pode inserir um gráfico com bibliotecas como Chart.js -->
+      </div>
+    </section>
+
+    <!-- Seção de Status -->
+    <section class="status-section">
+      <div class="status-box">
+        <h2>Disponibilidade</h2>
+        <p>99.95%</p>
+      </div>
+      <div class="status-box">
+        <h2>PP99</h2>
+        <p>553MS</p>
+      </div>
+      <div class="status-box error">
+        <h2>PP95</h2>
+        <p>527MS</p>
+      </div>
+    </section>
+
+    <!-- Legenda de Status -->
+    <div class="status-legend">
+      <div class="status-item stable">ESTÁVEL</div>
+      <div class="status-item slow">LENTO</div>
+      <div class="status-item error">ERRO</div>
+    </div>
+
+    <!-- Seção Parceria -->
+    <section class="partnership">
+      <span>tecnospeed</span> X <span>PLUGBOLETO</span>
+    </section>
+
+    <!-- Histórico de Erros -->
+    <section class="error-history">
+      <h2>Histórico de erros</h2>
+      <table>
+        <tr>
+          <td>24/10/2024 18:40</td>
+          <td>ERROR - 504</td>
+        </tr>
+        <tr>
+          <td>24/10/2024 18:10</td>
+          <td>ERROR - ECONNRESET</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
