@@ -9,3 +9,5 @@ Maria Eduarda Celeste
 Rafael Eiji Goto 
 
 Necessario npm install express axios dotenv winston criar arquivo ".env" com "PORT=3000"
+
+instalar next e react
